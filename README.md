@@ -40,13 +40,28 @@ MeetingProject
             
 2. MMS_Web_API.zip
 
-  
+            Business
+                --HRRMS.Business.proj
+                    login, lookup nd Meeting service -----all business logic over here            
+                --HRRMS.Business.Models
+                    Input and output business objects which interacts with the angular objects
+            
+            Data
+                --HRRMS.Data.Application
+                    Entities and Mapping interaction with database table
+                    using datacontext
+            Framework
+                --HRRMS.Data.proj
+                    generic repository and unitofwork
+                --HRRMS.Infrastructure.proj
+                    boostrap dependency injection                               
+            WebAPI
+                --HRRMS.WebApi1
+                    App_Start/FilterConfig.cs --configure CheckAuthToken filter
+                    Controller 
+                        expose endpoints to frontend application
+                    --Unityresolver --helper class for DI injection
+                    Web.config - connection string
+                    
+3. MMS.sql - Tables and insert scripts
 
-
-
-
-
-
-
-
-3. MMS.sql - database script and sample data
